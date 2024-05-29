@@ -8,7 +8,7 @@
 import UIKit
 
 protocol TaskViewControllerDelegate: AnyObject {
-	func insertTask(task: Task)
+	func insert(task: Task)
 }
 
 final class TaskListViewController: UITableViewController {
@@ -131,7 +131,7 @@ private extension TaskListViewController {
 
 // MARK: - TaskViewControllerDelegate
 extension TaskListViewController: TaskViewControllerDelegate {
-	func insertTask(task: Task) {
+	func insert(task: Task) {
 		tasks.append(task)
 		let newIndexPath = IndexPath(row: tasks.count - 1, section: 0)
 		tableView.insertRows(at: [newIndexPath], with: .automatic)

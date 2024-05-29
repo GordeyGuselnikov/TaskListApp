@@ -80,7 +80,7 @@ final class TaskViewController: UIViewController {
 		guard let task = taskTextField.text, !task.isEmpty else { return }
 		
 		storageManager.create(task) { [unowned self] task in
-			delegate?.insertTask(task: task)
+			delegate?.insert(task: task)
 			dismiss(animated: true)
 		}
 	}
