@@ -64,19 +64,59 @@
 		8F79AEAC2C0726F700BCFD40 /* TaskListApp */ = {
 			isa = PBXGroup;
 			children = (
-				8F79AEAD2C0726F700BCFD40 /* AppDelegate.swift */,
-				8F79AEAF2C0726F700BCFD40 /* SceneDelegate.swift */,
-				8F79AEC42C07288800BCFD40 /* TaskListViewController.swift */,
-				8F79AECC2C0739A200BCFD40 /* StorageManager.swift */,
-				8F79AEC62C07290E00BCFD40 /* TaskViewController.swift */,
-				8F79AEC82C07390700BCFD40 /* AlertControllerFactory.swift */,
-				8F79AECA2C07393E00BCFD40 /* FilledButtonFactory.swift */,
-				8F79AEB92C0726F900BCFD40 /* Assets.xcassets */,
-				8F79AEBB2C0726F900BCFD40 /* LaunchScreen.storyboard */,
-				8F79AEBE2C0726F900BCFD40 /* Info.plist */,
+				8F79AECE2C0DAF1700BCFD40 /* App */,
+				8F79AED12C0DAF7A00BCFD40 /* ViewControllers */,
+				8F79AECF2C0DAF3F00BCFD40 /* Services */,
+				8F79AED22C0DAFD000BCFD40 /* Factories */,
+				8F79AED02C0DAF4D00BCFD40 /* Storyboards */,
 				8F79AEB62C0726F700BCFD40 /* TaskListApp.xcdatamodeld */,
+				8F79AEB92C0726F900BCFD40 /* Assets.xcassets */,
 			);
 			path = TaskListApp;
+			sourceTree = "<group>";
+		};
+		8F79AECE2C0DAF1700BCFD40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8F79AEAD2C0726F700BCFD40 /* AppDelegate.swift */,
+				8F79AEAF2C0726F700BCFD40 /* SceneDelegate.swift */,
+				8F79AEBE2C0726F900BCFD40 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8F79AECF2C0DAF3F00BCFD40 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F79AECC2C0739A200BCFD40 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F79AED02C0DAF4D00BCFD40 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F79AEBB2C0726F900BCFD40 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8F79AED12C0DAF7A00BCFD40 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F79AEC42C07288800BCFD40 /* TaskListViewController.swift */,
+				8F79AEC62C07290E00BCFD40 /* TaskViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8F79AED22C0DAFD000BCFD40 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				8F79AEC82C07390700BCFD40 /* AlertControllerFactory.swift */,
+				8F79AECA2C07393E00BCFD40 /* FilledButtonFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9QM497LW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp/Info.plist;
+				INFOPLIST_FILE = TaskListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -334,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9QM497LW6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskListApp/Info.plist;
+				INFOPLIST_FILE = TaskListApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
